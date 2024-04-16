@@ -5,12 +5,12 @@ import io
 from flask_cors import CORS
 from openai import OpenAI
 
-client = OpenAI(api_key="AIzaSyD1sKkal3bgXQWl0Ayqa2-cuI2gK-NM2vM")
+client = OpenAI(api_key="credenciais")
 
 
 app = Flask(__name__)
 CORS(app)
-genai.configure(api_key="AIzaSyD1sKkal3bgXQWl0Ayqa2-cuI2gK-NM2vM")
+genai.configure(api_key="credenciais")
 
 
 @app.route('/')
